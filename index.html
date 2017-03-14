@@ -1,37 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <title>Formularz</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
-    <form action="https://formspree.io/dzieciolmichal@o2.pl" method="post">
-          Imię:<br>
-              <label for="imie"></label>
-              <input type="text" name="imie" id="imie"><br>
-          Nazwisko:<br>
-              <label for="nazwisko"></label>
-              <input type="text" name="nazwisko" id="nazwisko"><br>
-          Nr telefonu:<br>
-              <label for="usrtel"></label>
-              <input type="tel" name="usrtel" id="usrtel"><br>
-          e-mail:<br>
-              <label for="email"></label>
-              <input type="email" name="email" id="email"><br>
-          wiadomosc:<br>
-              <label for="wiadomosc"></label>
-              <input type="text" name="wiadomosc" id="wiadomosc"><br>
-          
-              <input type="submit" value="Wyślij">        
+
+   <form action="https://formspree.io/dzieciolmichal@o2.pl" method="post" id="container">
+         <br>
+            <label for="imie"></label>
+            <input type="text" name="imie" id="imie" placeholder="Imię"><br>
+         <br>
+            <label for="nazwisko"></label>
+            <input type="text" name="nazwisko" id="nazwisko" placeholder="Nazwisko"><br> 
+           <div id="radio">
+            <div class="pierwsza"><input type="radio" name="plec" value="mezczyzna"></div> 
+               <div class="druga">Mężczyzna</div>
+            <div class="trzecia"><input type="radio" name="plec" value="kobieta"></div>
+               <div class="czwarta">Kobieta</div>
+           </div>    
+       
+<br>
+         <br>
+            <label for="usrtel"></label>
+            <input type="tel" name="usrtel" id="usrtel" maxlength="9" placeholder="Nr telefonu"><br>
+         <br>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="e-mail"><br><br>
+       miasto:<br>
+            <select name="miasto">
+                <option value="krakow">Kraków</option>
+                <option value="warszawa">Warszawa</option>
+                <option value="gdansk">Gdańsk</option>
+            </select><br><br>
+            <textarea rows="4" cols="39" placeholder="Napisz coś o sobie :)"></textarea><br>
+
+            <input type="checkbox" name="daneosobowe" value="daneosobowe" id="daneosobowe">
+            <label for="daneosobowe">wyrażam zgode na przetwazanie danych osobowych</label><br><br><br>
+            <input type="submit" value="Wyślij">
     </form>
-    
 
-    
-    
+
+
+
 </body>
+
 </html>
-
-
-
-
