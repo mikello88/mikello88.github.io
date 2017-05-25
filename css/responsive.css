@@ -1,4 +1,22 @@
 @media all and (max-width: 1200px) {
+    
+    /* about */
+    figure {
+        width: 100%;
+    }
+    
+    #ikony figure {
+        width: 40%;
+    }
+    
+    img {
+        max-height: inherit;
+    }
+    
+    article {
+        width: 100%;
+    }
+    
     .single-portfolio-item {
         width: 50%;
     }
@@ -39,21 +57,8 @@
     
     /* header */
     .main-header-content {
-        padding: 10%;
+        padding: 5%;
         text-align: center;
-    }
-    
-    /* about */
-    figure {
-        width: 100%;
-    }
-    
-    img {
-        max-height: inherit;
-    }
-    
-    article {
-        width: 100%;
     }
     
     .contact-data {
@@ -86,10 +91,27 @@
     h2 {
         font-size: 1.5em;
     }
+    
+    /* header */
+    .main-header-content {
+        padding: 10%;
+        text-align: center;
+    }
 }
 
 @media all and (max-width: 480px) {
     section {
         padding: 0 10px 30px;
+    }
+    
+    #ikony figure {
+        width: 100%;
+    }
+}
+
+@media (max-device-width: 768px)
+{
+    .main-header-content {    
+        padding: 5%;
     }
 }
