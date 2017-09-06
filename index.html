@@ -1,172 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    
-    <!-- Standardowe style -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Responsywne style -->
-    <link rel="stylesheet" href="css/responsive.css">
-    
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
-    
-    <!-- fontawesome.io -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/face.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Shrikhand" rel="stylesheet">
+	<link rel="Shortcut icon" href="img/favicon.ico" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<style>
+		body {
+			background: url(img/IMG_865606.jpg) no-repeat fixed ;
+			background-size: cover;
+		}
+		
+		#face-slider{
+		position:fixed;
+		right:-370px;
+		top:190px;
+		z-index:100;
+		}
+		#face-slider #tab{
+		cursor:pointer;
+		height:110px;
+		width:35px;
+		float:left;
+		background: url(img/facebook-slider.png) no-repeat center center;
+		}
+		#face-code{
+		padding:5px;
+		border: solid #0170cf 3px;
+		background: #fff;
+		float:left;
+		width:370px;
+		height:620px;
+		-moz-border-radius: 0 0 0 8px;
+		-webkit-border-radius: 0 0 0 8px;
+		border-radius: 0 0 0 8px;
+		}
+	</style>
+	<title>Rock Friends</title>
 </head>
-
 <body>
-   <!-- Navigation bar -->
-    <nav>
-       <label for="drop" class="toggle">Menu</label> 
-       <checkbox id="drop"></checkbox>
-        <ul id="main-nav">      
-            <li><a href="#about" class="nav-href">O mnie</a></li>
-            <li><a href="#skills" class="nav-href">Umiejętności</a></li>
-            <li><a href="#portfolio" class="nav-href">Portfolio</a></li>
-            <li><a href="#contact" class="nav-href">Kontakt</a></li>
-        </ul>
-    </nav>
-    
-    <!-- Header -->
-    <header id="main-header">
-        <div class="main-header-content">
-            <h1>Michał <span class="lime">Dzięcioł</span></h1>
-            <h2>Front-End Developer</h2>
-        </div>
-    </header>
-    
-    <!-- Sekcja 'o mnie' -->
-    <section id="about">
-        <h2>O <span class="lime">mnie</span></h2>
-        <figure>
-            <img src="img/jan-nowak.jpg" alt="">
-        </figure>
-        <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque totam, tenetur quasi dolorum provident eaque! </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci culpa vero eveniet vitae exercitationem, fuga molestiae, officia possimus molestias magni quidem doloribus praesentium. Inventore totam dicta illum iste quisquam mollitia doloremque, est vero possimus quae. Excepturi deserunt blanditiis aspernatur facere?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laudantium, quod enim ea vero perspiciatis assumenda tempora qui ducimus saepe. Repudiandae non, quos.</p>           
-        </article>
-    </section>
-    
-    <!-- Sekcja umiejętności -->
-    <section id="skills">
-        <h2>Moje <span class="lime">umiejętności</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt cumque delectus odio iste, sapiente animi vel quasi repudiandae aperiam in. Minus suscipit asperiores nemo delectus distinctio corrupti commodi, eaque culpa recusandae, odit laborum veniam debitis!</p>
-        <div id="skills-icons">
-           <div id="ikony">
-            <figure>
-                <img src="icons/html5.png" alt="" id="html" onmouseover="htmlColor()" onmouseout="htmlBW()">
-                <figcaption>HTML5</figcaption>
-            </figure>
-            <figure>
-                <img src="icons/css3.png" alt="" id="css" onmouseover="cssColor()" onmouseout="cssBW()">
-                <figcaption>CSS3</figcaption>
-            </figure>
-            <figure>
-                <img src="icons/js.png" alt="" id='js' onmouseover="jsColor()" onmouseout="jsBW()">
-                <figcaption>JavaScript</figcaption>
-            </figure>
-            <figure>
-                <img src="icons/jquery.png" alt="" id="jq" onmouseover="jqColor()" onmouseout="jqBW()">
-                <figcaption>jQuery</figcaption>
-            </figure>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Sekcja portfolio -->    
-    <section id="portfolio">
-        <h2>Moje <span class="lime">portfolio</span></h2>
-        <div class="portfolio-items">
-            <div class="single-portfolio-item" id="portfolio-item-1">
-                <div class="single-portfolio-item-mask">
-                    <div class="single-portfolio-item-mask-content">
-                        <div class="single-portfolio-item-mask-content-inner">
-                            <h3>Strona #1</h3>
-                            <p>Prosta strona wizytówka.<br />
-                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quae sed sequi atque, quo!</p>
-                            <h4>Użyte technologie</h4>
-                            <p>HTML5, CSS3, JavaScript</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-portfolio-item" id="portfolio-item-2">
-                <div class="single-portfolio-item-mask">
-                    <div class="single-portfolio-item-mask-content">
-                        <div class="single-portfolio-item-mask-content-inner">
-                            <h3>Strona #2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rerum, rem similique aut? Recusandae fuga aliquid, ex rerum consequatur, libero dolor? Reprehenderit itaque iusto vero sequi, commodi velit, eligendi ab.</p>
-                            <h4>Uzyte technologie</h4>
-                            <p>HTML5, CSS3, Sass, JavaScript, jQuery</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single-portfolio-item" id="portfolio-item-3">
-                <div class="single-portfolio-item-mask">
-                    <div class="single-portfolio-item-mask-content">
-                        <div class="single-portfolio-item-mask-content-inner">
-                            <h3>Strona #3</h3>
-                            <p>Prosta strona wizytówka.<br />
-                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quae sed sequi atque, quo! Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <h4>Użyte technologie</h4>
-                            <p>HTML5, CSS3, JavaScript, jQuery</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Kontakt -->
-    <section id="contact">
-        <div class="contact-data">
-            <h2>Michał <span class="lime">Dzięcioł</span></h2>
-            <address>
-                ul. Kwitnąca 6/65<br />
-                01-926 Warszawa
-            </address>
-            <address>
-                tel: 514 018 019<br />
-                e-mail: <a href="">dzieciolmichal@o2.pl</a>
-            </address>
-            <!-- Ikony social media -->
-            <div class="contact-social-icons">
-                <!-- Facebook-->
-                <a href="#" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-                <!-- LinkedIn -->
-                <a href="#" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-                <!-- Instagram -->
-                <a href="#" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-                <!-- Github -->
-                <a href="#" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
-            </div>   
-        </div>
-        <!-- Formularz kontaktowy -->
-        <div class="contact-form">
-            <form action="">
-                <input type="text" id="name" placeholder="Imię"><br />
-                <input type="email" id="email" placeholder="E-mail"><br />
-                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Treść wiadomości"></textarea><br />
-                <input type="submit" value="Wyślij">
-            </form>
-        </div>
-        <div style="clear: both"></div>
-    </section>
-    
-    <footer>
-        <p>Copyright &copy; Michał Dzięcioł</p>
-    </footer>
-    
-    <!-- JavaScript -->
-    <script src="javascript/htmlswap.js"></script>
-    <script src="javascript/cssswap.js"></script>
-    <script src="javascript/jsswap.js"></script>
-    <script src="javascript/jqswap.js"></script>
+
+	<div id="wrapper">
+		
+		<header>
+				<img src="img/Logo_RF_black.jpg" alt="logo rock friends">
+		</header>
+		<nav>
+				<a href="index.html" class="menu">Strona główna</a><a href="#menu" class="menu">Menu</a><a href="#gallery" class="menu">Galeria</a><a href="#contact" class="menu">Kontakt</a>
+		</nav>
+		
+		<section id="content">
+			
+			
+				<div class="polaroid">
+					<img src="img/Rock%20Friends2015.jpg" alt="Ania i Konrad">
+					<p>Do zobaczenia w Rock Friends!</p>
+				</div>
+			
+				<article class="description">
+					<h1 class="tag">O nas</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia voluptate veritatis dolor neque sit nobis dolorem delectus, vitae, debitis sequi dolore voluptatem! Adipisci animi vero laudantium optio eaque esse, placeat provident quae dolorem rem. Inventore rerum vero, hic, earum deleniti, expedita corporis obcaecati eos praesentium fugit consequatur eaque quia rem soluta deserunt autem, numquam quidem fuga officiis omnis nobis illo quas totam adipisci exercitationem? Corrupti tempore quaerat omnis 
+					</p>
+				</article>
+			
+		</section>
+		<section id="menu">
+			
+			<div class="drink">
+				<p>
+					<b>Piwo z beczki</b><br>
+					&#8226;&nbsp;Tyskie klasyczne 6/8 zł<br>
+					&#8226;&nbsp;Książęce podwójnie chmielone 7/10 zł<br><br>
+					<b>Piwo z butelki 10-14zł</b><br>
+					Duży wybór browarów rzemieślniczych.<br><br>
+					<b>Whisky od 10 zł</b><br>
+					W czwartki Ballantine's 8 zł<br>
+					Koktajle klasyczne 15-24 zł<br><br>
+					<b>Nasza specjalność - INFUZJE!</b><br>
+					Sezonowe owoce łączymy  z alkoholem i tworzymy wasze ulubione smaki. Dostępne na szoty lub jako baza do naszych autorskich koktajli.<br>
+					&#8226;&nbsp;Koktajle 17 zł<br>					&#8226;&nbsp;Szoty 8-10 zł<br>
+					&#8226;&nbsp;Degustacja (Pon-Czw) 5x szot / 20 zł
+				</p>	
+			</div>
+			
+			<div class="food">
+				<p>
+					<b>Bagietki na ciepło 10 zł</b><br>
+					&#8226;&nbsp;Kurczak, suszone pomidory, oliwki, rukola<br>
+					&#8226;&nbsp;Ser blue, chutney z cebuli, orzechy, rukola<br>
+					&#8226;&nbsp;Tuńczyk, kapary, czerwona cebula, rukola<br><br>
+					<b>Tosty 4 szt. 10 zł</b><br>
+					&#8226;&nbsp;Ser, salami, oliwki, sos<br>
+					&#8226;&nbsp;Ser, szynka, szuszone pomidory, sos<br>
+					&#8226;&nbsp;Ser, ser blue, orzechy laskowe<br><br>
+					
+					Smalec domowy 10 zł<br>
+					Śledziki 10 zł<br>
+					Nachos + salsa 9 zł<br>
+					Chipsy 5 zł<br>
+					Orzeszki 5 zł <br>
+					Paluszki 5 zł
+				</p>
+				
+				
+			</div>
+			<div style="clear: both"></div>
+		</section>	
+		
+		<section class="container" id="gallery">
+		
+				<div class="gallery">
+
+						<a tabindex="1"><img src="img/1.jpg"></a>
+						<a tabindex="1"><img src="img/2.jpg"></a>
+						<a tabindex="1"><img src="img/3.jpg"></a>
+						<a tabindex="1"><img src="img/14.jpg"></a>
+						<a tabindex="1"><img src="img/5.jpg"></a>
+						<a tabindex="1"><img src="img/6.jpg"></a>
+						<a tabindex="1"><img src="img/7.jpg"></a>
+						<a tabindex="1"><img src="img/8.jpg"></a>
+						<a tabindex="1"><img src="img/9.jpg"></a>
+						<a tabindex="1"><img src="img/10.jpg"></a>
+						<a tabindex="1"><img src="img/11.jpg"></a>
+						<a tabindex="1"><img src="img/13.jpg"></a>
+						<span class="close"></span>
+
+				</div>
+		</section>
+		<section id="contact">
+			<article>
+				<h1>Kontakt</h1>
+					 <p>Rock Friends<br>
+					 ul. Śliska 3 (wjazd od ul. Sosnowej)<br>
+					 00-127 Warszawa<br>
+					 <b>Ania:</b> 515 967 123<br>
+					 <b>Konrad:</b> 514 900 777</p>
+			</article>	
+			<div class="mapa">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1727.904388852424!2d20.99984462749321!3d52.232015601780276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c22a5699d%3A0x675f9948937ee29d!2s%C5%9Aliska+3%2C+Warszawa!5e0!3m2!1spl!2spl!4v1501445678403" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			
+		</section>
+		
+		
+		<footer>
+			<p>all rights reserved &copy; 2017 Rock Friends</p>
+		</footer>
+	</div>
+	
+							<!--facebook slider-->
+	
+		<div id="face-slider">
+			<div id="tab"></div>
+				<div id="face-code">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frock.friends.warszawa&tabs=timeline%2Cevents%2Cmessages&width=350&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="350" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+		</div>
+
+	<script>
+		$(function(){
+			$('#face-slider').hover(
+				function(){ $('#face-slider').stop().animate({"right": "0"}, 1000); },
+				function(){ $('#face-slider').stop().animate({"right": "-370px"}, 1000); }
+			);
+		});
+	</script>	
+
+
 </body>
 </html>
