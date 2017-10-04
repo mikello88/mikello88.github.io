@@ -164,7 +164,7 @@ padding:20px;
 position:relative;
 width:800px;
 border-radius:10px;
-
+overflow: scroll;
 }
 
 .gallery {
@@ -256,6 +256,8 @@ z-index:30;
 .gallery a:focus ~ .close {
 display:block;
 }
+
+
 
 #contact {
 	width: 100%;
