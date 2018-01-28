@@ -14,6 +14,34 @@
 		<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#header'), 500); });
+			$('#link2').click(function() { $.scrollTo($('#menu'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#gallery'), 500); });
+			$('#link4').click(function() { $.scrollTo($('#contact'), 500); });
+			
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+        
+        
         <style>
 		
 		#face-slider{
@@ -61,10 +89,10 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">RockFriends</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#header" id="link1">RockFriends</a></li>
+                        <li><a href="#menu" id="link2">Menu</a></li>
+                        <li><a href="#gallery" id="link3">Galeria</a></li>
+                        <li><a href="#contact" id="link4">Kontakt</a></li>
                     </ul>
                 </div>
             </nav>
@@ -74,7 +102,14 @@
 		        <p>Rock Friends to rock’n’rollowa atmosfera w samym sercu Warszawy.<br />
 		        <br />Bogaty wybór alkoholi i koktajli, drobne przekąski i dużo dobrej muzyki.
 		        </p>
+		        
 		    </div>
+            
+            
+            
+		
+                
+            
             
         </header>
         
@@ -90,6 +125,7 @@
             <div class="center">
 			    <div class="drinks">
 			            <p>
+			                <br>
 					        <b>Piwo beczkowe</b><br>
 					        Tyskie klasyczne 6/8 zł<br>
 					        Kozel Jasny 7/10 zł<br>
@@ -115,7 +151,8 @@
                     
 			    </div>
                 <div class="foods">
-                    <p>
+                    <p>    
+                            <br>
                             <b>Bagietki na ciepło 10 zł</b><br>
                             Kurczak, suszone pomidory, oliwki, rukola<br>
                             Ser blue, chutney z cebuli, orzechy, rukola<br>
@@ -193,12 +230,12 @@
                         <br />
                         <li><p><b>Poniedziałek - Sobota 15-2</b></p></li>
                         <li><p><b>Niedziela zamknięte</b></li>
-                        
                     </ul>
                 </div>
             
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.7141086862256!2d21.0008209857937!3d52.23235300743433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c3d613deb%3A0xb59d97b88a65750f!2sRock+Friends!5e0!3m2!1spl!2spl!4v1516662276897"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.7141086862256!2d21.0008209857937!3d52.23235300743433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c3d613deb%3A0xb59d97b88a65750f!2sRock+Friends!5e0!3m2!1spl!2spl!4v1516662276897">                        
+                    </iframe>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -206,77 +243,15 @@
         
         <footer id="footer">
             <div class="container">
-                <p>Rock Friends 2018 &copy; Created by Rock Friends with passion :) </p>
+                <p>Rock Friends 2018 &copy; Created by Rock Friends with passion :) <a href="https://www.facebook.com/rock.friends.warszawa/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                </p>
             </div>
         </footer>
         
-        
-        
-        
-        
-        
-        
-    
-        
-        
-        
-        
-        
-        
-        
-        
+       
     </div>
 
-				
-    
-	    
-						
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
 
 <!--facebook slider-->

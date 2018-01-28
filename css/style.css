@@ -208,6 +208,7 @@ nav ul li a{
     line-height: 15px;
 }
 
+
 h1, h2, h3, h4 {
   font-weight: bold;
   letter-spacing: 2px;
@@ -271,17 +272,21 @@ hr {
     width: 50%;
     margin: -1px;
     border-right: 1px solid #222;
+    margin-bottom: 20px;
+    
 }
 
 #menu .foods {
     float: left;
     width: 50%;
+    margin-bottom: 20px;
     
 }
 
 #menu .drinks p, .foods p {
     padding: 0 20px;
     margin: 0;
+    
 }
 
 #menu .drinks .whisky_left,
@@ -314,6 +319,7 @@ hr {
     #menu .drinks {
         float: none;
         width: 100%;
+        
     }
 }
 
@@ -323,6 +329,8 @@ hr {
         width: 100%;
     }
 }
+
+
 
 /*gallery section*/
 
@@ -415,6 +423,7 @@ hr {
     text-align: left;
     color: #222;
     border-right: 1px solid #222;
+    margin-bottom: 10px;
 }
 #contact .adress h3{
     margin-top: 0;
@@ -468,21 +477,58 @@ hr {
 
 @media all and (max-width:1200px){
     #contact .container{
-        width: 750px;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
+@media all and (max-width:1200px){
+    #contact .map{
+        width: 450px !important;
+    }
+}
+
+@media all and (max-width:800px){
+    #contact .container{
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media all and (max-width:1200px){
+    #contact .map{
+        width: 350px !important;
+    }
+}
+
 
 @media all and (max-width:750px){
+    #contact .container{
+        width: 100%;
+    }
+}
+@media all and (max-width:750px){
+    #contact .adress
+}
+@media all and (max-width:750px){
+    #contact .adress{
+        float: none;
+        margin-left: 10px;
+    }
+}
+@media all and (max-width:750px){
     #contact .map{
-        display: none;   
+        float: none;
+        width: 100% !important;
+        border: 0;
+        margin-left: 0;
     }
 }
 
-@media all and (max-width:450px){
-    #contact .container{
-        width: 320px;
-    }
-}
+
+
 /*footer section*/
 
 #footer p{
@@ -494,7 +540,17 @@ hr {
     font-family: 'Roboto', sans-serif;
 }
 
+#footer .fa{
+    font-size: 18px;
+    color: #3b5998; 
+}
     
- 
+#footer .fa:hover{
+    color: #8b9dc3;
+} 
     
-    
+@media all and(min-width:780px){
+    #footer .fa{
+        display: none;
+    }
+}    
