@@ -357,12 +357,26 @@ hr {
     margin-right: 300px;
 }
 
-@media all and (max-width:1580px){
+@media all and (max-width:1219px){
     #gallery .picture-grid{
         margin-right: 0;
         margin-left: 0;
     }
 }
+
+@media all and (min-width:730px) {
+    #gallery .none {
+        display: none;
+    }
+}
+
+@media all and (min-width:976px) {
+    #gallery .none {
+        display: grid;
+    }
+}
+
+
 
 #gallery .picture-grid .grid-box img{
     width: 100%;
