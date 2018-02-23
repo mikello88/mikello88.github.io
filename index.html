@@ -1,313 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<title>Rock Friends</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,700" rel="stylesheet">
-		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="stylesheet" href="css/lightbox.min.css">
-		<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="js/jquery.scrollTo.min.js"></script>
-        <script>
-		
-		jQuery(function($)
-		{
-			//zresetuj scrolla
-			$.scrollTo(0);
-			
-			$('#link1').click(function() { $.scrollTo($('#header'), 500); });
-			$('#link2').click(function() { $.scrollTo($('#menu'), 500); });
-			$('#link3').click(function() { $.scrollTo($('#gallery'), 500); });
-			$('#link4').click(function() { $.scrollTo($('#contact'), 500); });
-			
-		}
-		);
-		
-		//pokaż podczas przewijania
-		$(window).scroll(function()
-		{
-			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
-			else $('.scrollup').fadeOut();		
-		}
-		);
-	
-	
-	</script>
-        
-        
-        <style>
-		
-		#face-slider{
-		position:fixed;
-		right:-370px;
-		top:190px;
-		z-index:100;
-		}
-		#face-slider #tab{
-		cursor:pointer;
-		height:110px;
-		width:35px;
-		float:left;
-		background: url(images/facebook-slider.jpg) no-repeat center center;
-		}
-		#face-code{
-		padding:5px;
-		border: solid #0170cf 3px;
-		background: #fff;
-		float:left;
-		width:354px;
-		height:620px;
-		-moz-border-radius: 0 0 0 8px;
-		-webkit-border-radius: 0 0 0 8px;
-		border-radius: 0 0 0 8px;
-		}
-            
-            @media all and (max-width: 780px) {
-                #face-slider {
-                    display: none;
-                }
-            }    
-	</style>
-
-		
-	</head>
+    <meta charset="UTF-8">
+    <title>Responsive Web Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> 
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
 <body>
-   
-    <div class="wrapper">
-       
-        <header id="header">
-            <nav>
-                <div class="menu-icon">
-                    <i class="fa fa-bars fa-2x"></i>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#header" id="link1">RockFriends</a></li>
-                        <li><a href="#menu" id="link2">Menu</a></li>
-                        <li><a href="#gallery" id="link3">Galeria</a></li>
-                        <li><a href="#contact" id="link4">Kontakt</a></li>
-                    </ul>
-                </div>
-            </nav>
+    
+    
+    <header>
+        <a href="index.html" class="header-brand">LevelUP</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="cases.html" class="header-cases">Cases</a>
+        </nav>
+    </header>
+    
+    
+    <main>
+            <section class="main-banner">
+               <div class="vertical">
+                    <h2>I AM FREELANCE WEB<br>DEVELOPER</h2>
+                    <h3>"With specialty in front-end development, funcionality, UX design, and SEO"</h3>
+               </div>
+            </section>
             
-            <div class="inner">
-                <h2><strong>Rock<br>Friends</strong></h2>
-		        <p>Rock Friends to rock’n’rollowa atmosfera w samym sercu Warszawy.<br />
-		        <br />Bogaty wybór alkoholi i koktajli, drobne przekąski i dużo dobrej muzyki.
-		        </p>
-		        
-		    </div>
-            
-            
-            
-		
-                
-            
-            
-        </header>
-        
-        <section id="menu">
-           <div class="container">
-               
-                   
-				<div class="section-title">
-					<strong>01</strong>
-					<h1 class="heading bold">NASZE MENU</h1>
-					<hr>
-				</div>
-            <div class="center">
-			    <div class="drinks">
-			            <p>
-			                <br>
-					        <b>Piwo beczkowe</b><br>
-					        Tyskie klasyczne 6/8 zł<br>
-					        Kozel Jasny 7/10 zł<br>
-					        <b>W każdą środę Tykie Klasyczne 6zł za 0.5l</b><br><br>
-					        <b>Piwo butelkowe 10-14zł</b><br>
-					        Duży wybór browarów rzemieślniczych.<br><br>
-					        <b>Whisky</b><br>
-                        </p>
-                        <div class="whisky_left">
-                        <p>Ballantine’s Finest 10<br>Ballantine’s Hard Fired 10<br>Ballantine’s 12YO 16</p>
+       <div class="wrapper">     
+            <section class="index-links">
+                <a href="">
+                    <div class="index-boxlink-square">
+                        <h3>LevelUP</h3>
                     </div>
-			        <div class="whisky_right">
-			            <p>Glenlivet 12YO 24<br>Glenfiddich 12YO 24<br>Lagavulin 16YO 30</p>
-			        </div>
-                        <p>
-                            <b>W czwartki Ballantine's 8 zł</b><br><br>
-					        <b>Nasza specjalność - INFUZJE!</b><br>
-					        Sezonowe owoce łączymy  z alkoholem i tworzymy wasze ulubione smaki. <br> Dostępne na         szoty lub jako baza do naszych autorskich koktajli.<br><br>
-					        Koktajle 17 zł &#124;					
-					        Szoty 8-10 zł<br><br>
-					        <b>Degustacja (Pon-Czw) 5x szot / 20 zł</b>
-				            </p>	
-                    
-			    </div>
-                <div class="foods">
-                    <p>    
-                            <br>
-                            <b>Bagietki na ciepło 10 zł</b><br>
-                            Kurczak, suszone pomidory, oliwki, rukola<br>
-                            Ser blue, chutney z cebuli, orzechy, rukola<br>
-                            Tuńczyk, kapary, czerwona cebula, rukola<br><br>
-                            <b>Tosty 4 szt. 10 zł</b><br>
-                            Ser, salami, oliwki, sos<br>
-                            Ser, szynka, szuszone pomidory, sos<br>
-                            Ser, ser blue, orzechy laskowe, sos<br><br>
+                </a>
+                <a href="">
+                    <div class="index-boxlink-rectangle">
+                        <h3>Cases</h3>
+                    </div>
+                </a>
 
-                            <b>Smalec domowy 10 zł</b><br><br>
-                            <b>Śledziki 10 zł</b><br><br>
-                            <b>Nachos + salsa 9 zł</b><br><br>
-                            Chipsy &#124; Orzeszki &#124; Paluszki / 5 zł<br><br>
-                            <b>Dla rezerwacji grupowych oferujemy specjalne menu</b>
-                       </p>
-                </div>
-                <div class="clear"></div>
-               </div>   
-            </div>
-           
-            
-        </section>
-        
-        <section id="gallery">
-            <div class="container">
-                <div class="section-title">
-					<strong>02</strong>
-					<h1 class="heading bold">GALERIA</h1>
-					<hr>
-				</div>
-                
-                   <div class="picture-grid">
-                       <div class="grid-box"><a href="images/1.jpg" data-lightbox="gallery"><img src="images/1.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/2.jpg" data-lightbox="gallery"><img src="images/2.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/3.jpg" data-lightbox="gallery"><img src="images/3.jpg" alt=""></a></div>
-                       <div class="grid-box none"><a href="images/4.jpg" data-lightbox="gallery"><img src="images/4.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/5.jpg" data-lightbox="gallery"><img src="images/5.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/6.jpg" data-lightbox="gallery"><img src="images/6.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/7.jpg" data-lightbox="gallery"><img src="images/7.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/8.jpg" data-lightbox="gallery"><img src="images/8.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/13.jpg" data-lightbox="gallery"><img src="images/13.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/14.jpg" data-lightbox="gallery"><img src="images/14.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/11.jpg" data-lightbox="gallery"><img src="images/11.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/12.jpg" data-lightbox="gallery"><img src="images/12.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/9.jpg" data-lightbox="gallery"><img src="images/9.jpg" alt=""></a></div>
-                       <div class="grid-box"><a href="images/10.jpg" data-lightbox="gallery"><img src="images/10.jpg" alt=""></a></div>
-                      
-                   </div>
-                   
-            </div>
-                   <div class="foto">
-                    <p>Foto <a href="http://www.kamilaszuba.pl">KAMILA SZUBA_fotografia</a></p> 
-                   </div>    
-        </section>
-        
-        <section id="contact">
-            <div class="container">
-                <div class="section-title">
-					<strong>03</strong>
-					<h1 class="heading bold">KONTAKT</h1>
-					<hr>
-				</div>
-                <div class="adress">
-                    <ul>
-                        <li><h3>Rock Friends</h3></li>
-                        <li><p><i class="fa fa-map-marker" aria-hidden="true"></i> Ul. Śliska 3 (wjazd od Sosnowej)</p></li>
-                        <li><p><i class="fa fa-map" aria-hidden="true"></i> 00-127 Warszawa</p></li>
-                        <li><p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:rockfriends.warszawa@gmail.com"> Wyślij wiadomość </a></p></li>
-                        <li><p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:223702286"> 22 370 22 86 </a> (od 15)</p></li>
-                        <li><p><i class="fa fa-mobile" aria-hidden="true"></i> <b> Ania</b><a href="tel:515967123"> 515 967 123</a></p></li>
-                        <li><p><i class="fa fa-mobile" aria-hidden="true"></i> <b> Konrad</b><a href="tel:514900777"> 514 900 777</a></p></li>
-                        <br />
-                        <li><p><b>Poniedziałek - Sobota 15-2</b></p></li>
-                        <li><p><b>Niedziela zamknięte</b></li>
-                    </ul>
-                </div>
-            
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.7141086862256!2d21.0008209857937!3d52.23235300743433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c3d613deb%3A0xb59d97b88a65750f!2sRock+Friends!5e0!3m2!1spl!2spl!4v1516662276897">                        
-                    </iframe>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </section>
-        
-        <footer id="footer">
-            <div class="container">
-                <p>Rock Friends 2018 &copy; Created by Rock Friends with passion :) </p><p><a href="https://www.facebook.com/rock.friends.warszawa/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                </p>
-            </div>
-        </footer>
-        
-       
-    </div>
-
-	
-
-
-<!--facebook slider-->
-       
-        <div id="face-slider">
-			<div id="tab"></div>
-				<div id="face-code">
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frock.friends.warszawa&tabs=timeline%2Cevents%2Cmessages&width=350&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="350" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-				</div>
+                <a href="">
+                    <div class="index-boxlink-square">
+                        <h3>Portfolio</h3>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="index-boxlink-rectangle">
+                        <h3>YouTube Channel</h3>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="index-boxlink-square">
+                        <h3>About</h3>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="index-boxlink-square">
+                        <h3>Contact</h3>
+                    </div>
+                </a>
+            </section>
         </div>
-		
-		
-<script>
-		$(function(){
-			$('#face-slider').hover(
-				function(){ $('#face-slider').stop().animate({"right": "0"}, 1000); },
-				function(){ $('#face-slider').stop().animate({"right": "-370px"}, 1000); }
-			);
-		});
-</script>	
-<script type="text/javascript">
-    $(document).ready(function(){
-        $(".menu-icon").on("click", function(){
-            $("nav ul").toggleClass("showing");
-        });
-    });
+    </main>
+    
+    <footer>
+       <div class="wrapper">
+           <ul class="footer-main-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Cases</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul class="footer-cases-links">
+                <li><p>Latest cases:</p></li>
+                <li><a href="">MALING SHAOLIN - WEB DEVELOPMENT</a></li>
+                <li><a href="">EXCELLENTO - WEB DEVELOPMENT, SEO</a></li>
+                <li><a href="">LEVELUP - YOUTUBE CHANNEL</a></li>
+                <li><a href="">WELTEC - VIDEO PRODUCTION</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="www.youtube.com">
+                    <img src="images/youtube.png" alt="youtube logo">
+                </a>
+                <a href="facebook.com">
+                    <img src="images/facebook.png" alt="facebook logo">
+                </a>
+                <a href="twitter.com">
+                    <img src="images/twitter(1).png" alt="twitter logo">
+                </a>
+            </div>         
+       </div>
+         
+    </footer>
     
     
-    $(window).on("scroll", function(){
-        if($(window).scrollTop()) {
-            $('nav').addClass('black');
-        }
-        else {
-            $('nav').removeClass('black');
-        }
-    })
     
-</script>
-
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
-<!-- Magnific Popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<!-- Salvattore -->
-<script src="js/salvattore.min.js"></script>
-<!-- Main JS -->
-<script src="js/main.js"></script>
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
 </html>
