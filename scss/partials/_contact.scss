@@ -1,0 +1,49 @@
+.contact {
+    @include container;
+    padding: 3em;
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+        margin-top: 1em;
+        color: $dark-gray;
+    }
+
+    input, textarea {
+        display: block;
+        padding: .75em;
+        width: 100%;
+        font-size: 1.2rem;
+        background: lighten($light-gray, 5%);
+        border: 1px solid $light-gray;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 40%;
+        margin-top: 1em;
+        margin-left: auto;  
+        padding: .5em 1em;
+        background: $accent;
+        color: $white;
+        border: none;
+        transition: all .2s;
+        
+
+        @include sans-serif($fs: 2rem, $color: $white);
+
+        &:hover {
+            background-color: lighten($accent, 3%);
+            cursor: pointer;
+            box-shadow: 0 15px 30px 0 rgba(0,0,0,0.22);
+        }
+    }
+}
