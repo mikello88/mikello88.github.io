@@ -1,136 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Rosa Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Source+Sans+Pro:200,300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header id="header" class="header">
+        <div class="menu">
+            <div class="bar"></div>
+        </div>
+        <nav class="nav container">
+            <h1 class="main-logo">ROSA</h1>
+            <div class="overlay">
+                <ul class="list">
+                    <li class="list-item"><a href="#header" class="list-link underline">Welcome</a></li>
+                    <li class="list-item"><a href="#menu" class="list-link">Menu</a></li>
+                    <li class="list-item"><a href="#reservation" class="list-link">Reservation</a></li>
+                    <li class="list-item"><a href="#news" class="list-link">News</a></li>
+                    <li class="list-item"><a href="#contact" class="list-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-text">
+            <h2 class="main-welcome">Welcome</h2>
+            <h1 class="main-rosa">The Rosa</h1>
+            <div class="separator-line">
+                <div class="line-left"></div>
+                <div class="star-gold">✻</div>
+                <div class="line-right"></div>
+            </div>
+            <h4 class="main-ready">Ready to be opened</h4>
+            <a href="#" class="btn btn-main">Explore</a>
+        </div>
+    </header>
 
-  <!-- hero section -->
-
-  <div class="welcome">
-    <h1>Welcome to my<span>Portfolio</span></h1>
-  </div>
-
-  <!-- welcome section -->
-
-  <section class="intro">
-    <div class="intro-left">
-      <img src="img/welcome-01.png" alt="notebook screen and coffee on wood table">
+    <div class="container">
+        <section id="story" class="our-story">
+            <div class="about">
+                <h2 class="main-font">Discover</h2>
+                <h2 class="main-font-secondary dark">Our Story</h2>
+                <div class="star-gray">✻</div>
+                <p class="paragraph">Rosa is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
+                <a href="#" class="btn btn-underline">About Us</a>
+            </div>
+            <div class="image">
+                
+            </div>
+        </section>
     </div>
-    <div class="intro-middle">
-      <h2>Making it happen</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officia esse quas dicta. Dicta, quia!</p>
-    </div>
-    <div class="intro-right">
-      <img src="img/welcome-02.png" alt="two screens and laptop on a table">
-    </div>
-  </section>
 
-  <section class="about">
-    <img src="img/joe-portfolio.png" alt="my picture" class="about-img">
-    <h1 class="about-title">About Me</h1>
-    <h2 class="about-subtitle">Designer & Developer</h2>
-    <div class="about-text">
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda asperiores magnam ducimus. Amet repellat odio adipisci possimus perferendis, dolor ex non harum, a eius voluptas, dignissimos ullam fuga hic neque laborum in quasi. Aliquid illum incidunt ea earum, molestiae ad.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium consequatur beatae ut reiciendis nesciunt harum quod. Dolorum, itaque exercitationem veniam necessitatibus nesciunt adipisci quos a nisi et expedita saepe enim architecto facere repudiandae, officiis beatae ducimus explicabo facilis repellat. Ducimus.</p> 
+    <section class="between-sec tasteful">
+        <hgroup class="title">
+            <h2 class="main-font">Tasteful</h2>
+            <h2 class="main-font-secondary white">Recipes</h2>
+        </hgroup>
+    </section>
+
+    <div class="container">
+        <section id="menu" class="our-menu">
+            <div class="image-group">
+                <img src="images/menu-thumb-6-300x218.jpg" alt="menu food picture" class="image-item">
+                <img src="images/menu-thumb-2-300x218.jpg" alt="menu food picture" class="image-item">
+                <img src="images/menu-thumb-1-300x218.jpg" alt="menu food picture" class="image-item">
+                <img src="images/menu-thumb-4-300x218.jpg" alt="menu food picture" class="image-item">
+            </div>
+            <div class="about">
+                <h2 class="main-font">Discover</h2>
+                <h2 class="main-font-secondary dark">Menu</h2>
+                <div class="star-gray">✻</div>
+                <p class="paragraph">For those with pure food indulgence in mind, come next door and sate your desires with our ever changing internationally and seasonally inspired small plates.  We love food, lots of different food, just like you.</p>
+                <a href="#" class="btn btn-underline">View the full menu</a>
+            </div>
+        </section>
     </div>
-  </section>
-
-  <!-- portfolio items section -->
-
-  <section class="portfolio">
     
-      <h1>My Work</h1>
-      <div class="portfolio-items">
+    <section class="between-sec blend">
+        <hgroup class="title">
+            <h2 class="main-font">The perfect</h2>
+            <h2 class="main-font-secondary white">Blend</h2>
+        </hgroup>
+    </section>
 
-        <!-- portfolio item 1 -->
-        <figure class="portfolio-item featured">
-          <img src="img/portfolio-01.jpg" alt="portfolio item">
-          <figcaption>
-            <h2 class="portfolio-title">Project Name</h2>
-            <p class="portfolio-desc">A shor description could go here</p>
-            <a href="#" class="portfolio-link">Read more </a>
-          </figcaption>
-        </figure>
+    <div class="container">
+            <section id="story" class="our-story">
+                <div class="about">
+                    <h2 class="main-font">Culinary</h2>
+                    <h2 class="main-font-secondary dark">Delight</h2>
+                    <div class="star-gray">✻</div>
+                    <p class="paragraph">We promise an intimate and relaxed dining experience that offers something different to local and foreign patrons and ensures you enjoy a memorable food experience every time.</p>
+                    <a href="#" class="btn btn-underline">Make a reservation</a>
+                </div>
+                <div class="image-group-2">
+                    <img src="images/bacon-1-400x600.jpg" alt="menu food picture" class="image-item">
+                    <img src="images/bacon-2-400x600.jpg" alt="menu food picture" class="image-item">
+                </div>
+            </section>
+        </div>
 
-        <!-- portfolio item 2 -->
-        <figure class="portfolio-item">
-            <img src="img/portfolio-02.jpg" alt="portfolio item">
-            <figcaption>
-              <h2 class="portfolio-title">Project Name</h2>
-              <p class="portfolio-desc">A shor description could go here</p>
-              <a href="#" class="portfolio-link">Read more </a>
-            </figcaption>
-          </figure>
+    <footer class="footer">
+        <section class="container">
+            <div class="locations">
+                <h4 class="locations-header">Locations</h4>
+                    <div class="location">
+                        <h5 class="location-item">500 Driveway Hill<br>
+                            Tampa Bay, FL - 4890</h5>
+                        <h5 class="location-item">342 Porcopio Drive<br>
+                            Brooklyn, NY - 10010</h5>
+                    </div>
+            </div>
+    
+            <div class="hours">
+                <h4 class="hours-header">Hours</h4>
+                    <div class="days">
+                        <h5 class="days-item">Monday - Thursday<br>
+                            10:30am - 8:00pm</h5>
+                        <h5 class="days-item">Friday & Saturday<br>
+                            10:30am - 10:00pm</h5>
+                        <h5 class="days-item">Available for private<br>
+                            events on sunday</h5>    
+                    </div>
+            </div>
+        </section>
+        
+    </footer>
+    <section class="copyrights">
+        <div class="container">
+            <p class="copyright">
+                Copyrights &copy; 2019 
+            </p>
+        </div>
+    </section>
 
-          <!-- portfolio item 3 -->
-        <figure class="portfolio-item">
-            <img src="img/portfolio-03.jpg" alt="portfolio item">
-            <figcaption>
-              <h2 class="portfolio-title">Project Name</h2>
-              <p class="portfolio-desc">A shor description could go here</p>
-              <a href="#" class="portfolio-link">Read more </a>
-            </figcaption>
-          </figure>
+    
 
-          <!-- portfolio item 4 -->
-        <figure class="portfolio-item">
-            <img src="img/portfolio-04.jpg" alt="portfolio item">
-            <figcaption>
-              <h2 class="portfolio-title">Project Name</h2>
-              <p class="portfolio-desc">A shor description could go here</p>
-              <a href="#" class="portfolio-link">Read more </a>
-            </figcaption>
-          </figure>
 
-          <!-- portfolio item 5 -->
-        <figure class="portfolio-item">
-            <img src="img/portfolio-05.jpg" alt="portfolio item">
-            <figcaption>
-              <h2 class="portfolio-title">Project Name</h2>
-              <p class="portfolio-desc">A shor description could go here</p>
-              <a href="#" class="portfolio-link">Read more </a>
-            </figcaption>
-          </figure>
-      </div>
-  </section>
+<!-- ✻ -->
 
-  <!-- contact form section -->
 
-  <section class="contact">
-    <h1>Contact Me</h1>
-    <form action="">
-      <label for="name" class="name">Name:
-        <input type="text" id="name">
-      </label>
-      
-      <label for="email" >Email:
-        <input type="email" name="email" id="email">
-      </label>
 
-      <label for="message">Message:
-        <textarea name="message" id="message"></textarea>
-      </label>
 
-      <input class="btn" type="submit" value="Send">
-    </form>
-  </section>
 
-  <!-- footer section -->
 
-  <footer>
-    <p>Follow me on social media</p>
-    <div class="social-icons">
-      <img class="social-icon" src="img/twitter.svg" alt="twitter">
-      <img class="social-icon" src="img/github.svg" alt="github">
-      <img class="social-icon" src="img/instagram.svg" alt="instagram">
-    </div>
-    <p class="copyright">Copyright 2018 by Michał Dzięcioł</p>
-  </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
